@@ -61,10 +61,17 @@ Button btnagregar;
             valores.put(Trans.apellido, apellido.getText().toString());
             valores.put(Trans.edad, edad.getText().toString());
             valores.put(Trans.correo, correo.getText().toString());
+
+            Long resultado = db.insert(Trans.TablePersonas, Trans.id, valores);
+
+            Toast.makeText(getApplicationContext(), "Registro ingresado con exito" +resultado.toString(), Toast.LENGTH_LONG).show();
+
+            db.close();
+
         }
         catch (Exception ex)
         {
-            ex.toString()
+            ex.toString();
 
         }
 
