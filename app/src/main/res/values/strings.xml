@@ -4,5 +4,8 @@
     <string name="IngresoApellido">Ingrese su apellido</string>
     <string name="IngreseFecha">Ingrese fecha de nacimiento</string>
     <string name="IngresoCorreo">Ingrese su correo</string>
+    <string name="TomarFoto">Tomar Foto</string>
+
+
 
 </resources>
